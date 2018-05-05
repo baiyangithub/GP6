@@ -38,13 +38,16 @@ a,input{outline:none;}
 /*banner*/
 #banner-box{width:100%;background:#fff;padding:20px 0 50px 0;}
 .banner{width:1130px;height:300px;border-radius:4px;margin:0 auto;overflow:hidden;position:relative;}
-.banner .banner-img li{float:left;}
+.banner .banner-img li{float:left;position: absolute;}
 .banner .banner-img li img{width:100%;height:300px;}
+.banner .banner-img li:nth-of-type(1) {
+    z-index: 1;
+}
 .banner .arrow{position:absolute;top:50%;margin-top:-26px;background:transparent no-repeat center;width:52px;height:52px;display:none;}
 .banner:hover .arrow{display:block;}
-.banner .leftA{left:30px;background:url(../images/left_arrow.svg) no-repeat;}
+.banner .leftA{left:30px;background:url(../images/left_arrow.svg) no-repeat;z-index: 9;}
 .banner .leftA:hover{left:30px;background:url(../images/left_arrowhover.svg) no-repeat;}
-.banner .rightA{right:30px;background:url(../images/right_arrow.svg) no-repeat;}
+.banner .rightA{right:30px;background:url(../images/right_arrow.svg) no-repeat;z-index: 9;}
 .banner .rightA:hover{right:30px;background:url(../images/right_arrowhover.svg) no-repeat;}
 
 /*adv-box*/

@@ -45,7 +45,7 @@ for(var i = 0 ; i < 40 ;i++){
                     boxlist += boxString; 
                                    
 }
-console.log(boxlist);  
+// console.log(boxlist);  
 main_ele.innerHTML += boxlist;
 
 
@@ -74,5 +74,5 @@ for(var i = 0 ; i < 5 ;i++){
                     boxlist += boxString; 
                                    
 }
-console.log(boxlist);  
+// console.log(boxlist);  
 main_ele.innerHTML += boxlist;
