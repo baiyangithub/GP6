@@ -1,6 +1,6 @@
 	//console.log($);
  var bannerplay= function(box,hiddenblock,displayblock,lilength,auto,position,leftbtn,rightbtn){
- 	              //外部盒子，隐藏区块，显示区块，li长度，是否自动播放，轮播图上下还是左右，
+ 	              //外部盒子，所有图片/隐藏区块，显示区块，li个数，是否自动播放，轮播图上下还是左右，
  	              //左右切换按钮
                 var index = 0;
 	    		var position;    		    		
