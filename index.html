@@ -51,6 +51,11 @@
                 <li><a href="###"><img src="images/banner2.png" alt="" title="" /></a></li>
                 <li><a href="###"><img src="images/banner3.jpg" alt="" title="" /></a></li>
             </ul>
+            <ul class="jia">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
             <a class="arrow leftA"></a>
             <a class="arrow rightA"></a>
         </div>
@@ -196,19 +201,20 @@
         <a href="###">意见反馈</a>
     </div>
     <script src="js/banner.js"></script>
-    <script src="js/load_div.js"></script>
-    <script src="js/move.js"></script>
-    <script src="js/banner_sowing.js"></script>
+    <!-- <script src="js/load_div.js"></script> -->
+    <!-- <script src="js/move.js"></script> -->
+    <!-- <script src="js/banner_sowing.js"></script> -->
     <script src="js/jquery-3.1.1.js"></script>
 
     <script>
-        // var aLi = document.querySelector(".banner-img").children;
-        // var next_btn = document.querySelector(".rightA");
-        // var prev_btn = document.querySelector(".leftA");
+        var aLi = $(".banner .banner-img li");
+        var next_btn = $(".rightA");
+        var prev_btn = $(".leftA");
+        var jia = $(".jia li");
+        console.log(aLi);
         // console.log(aLi);
-        // // console.log(aLi);
-        // bannerplay($(".banner"),aLi,aLi.length,true,0,prev_btn,next_btn);
-        // console.log($(".banner"));
+        bannerplay($(".banner"),aLi,jia,aLi.length,true,0,prev_btn,next_btn);
+        console.log($(".banner"));
     </script>
 </body>
 </html>
